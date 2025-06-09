@@ -1,0 +1,54 @@
+
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1024px) {
+    .container {
+        width: 80%;
+        max-width: 1200px;
+    }
+    #imagenPrincipal img {
+        width: 50%;
+    }
+    #asideContent,
+    #mainContent {
+        width: 48%;
+    }
+}
+
+/* Tabletas (menos de 1024px) */
+@media (max-width: 1023px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    #imagenPrincipal {
+        flex-direction: column; /* Apila imagen y texto */
+    }
+    #imagenPrincipal img {
+        width: 80%;
+    }
+    #asideContent,
+    #mainContent {
+        width: 100%;
+        float: none; /* Evita uso de float en móviles */
+    }
+}
+
+/* Móviles (menos de 768px) */
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        flex-direction: column;
+    }
+    #imagenPrincipal {
+        flex-direction: column;
+        align-items: center;
+    }
+    #imagenPrincipal img {
+        width: 100%;
+    }
+    .boxImagenes {
+        flex-direction: column; /* Imágenes en una sola columna */
+    }
+}

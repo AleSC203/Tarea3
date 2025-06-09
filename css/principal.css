@@ -1,7 +1,7 @@
+
 * {
     padding: 0px;
     margin: 0px;
-    /*box-sizing: Investigar;*/
     box-sizing: border-box;
 }
 
@@ -10,9 +10,7 @@
     width: 90%;
     background-color: rgb(51, 49, 47);
     border: initial;
-    /*Overflow investigar bastante*/
-    overflow: overlay;
-    /*si son dos valores es arriba abajo, izquierda derecha*/
+    overflow: hidden;
     margin: 15px auto 0px;
 }
 
