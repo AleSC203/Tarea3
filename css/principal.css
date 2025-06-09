@@ -1,0 +1,272 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    /*box-sizing: Investigar;*/
+    box-sizing: border-box;
+}
+
+#ContenedorCentral {
+    position: relative;
+    width: 90%;
+    background-color: rgb(51, 49, 47);
+    border: initial;
+    /*Overflow investigar bastante*/
+    overflow: overlay;
+    /*si son dos valores es arriba abajo, izquierda derecha*/
+    margin: 15px auto 0px;
+}
+
+
+/*Primera Parte*/
+
+#header {
+    position: relative;
+    top: 10px;
+    max-width: 100%;
+    height: 170px;
+
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+}
+
+h1.Animacion {
+    background: linear-gradient(90deg, #ffffff, rgb(40, 62, 104), #ffffff);
+    background-size: 500%;
+    background-clip: text;
+    color: transparent;
+    animation: text-animation 2s infinite linear;
+
+}
+
+h4.Animacion {
+    background: linear-gradient(90deg, #ffffff, rgb(40, 62, 104), #ffffff);
+    background-size: 500%;
+    background-clip: text;
+    color: transparent;
+    animation: text-animation 2s infinite linear;
+}
+
+@keyframes text-animation {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+
+
+
+/*Segunda Parte*/
+
+#imagenPrincipal {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: space-between;
+    /* Espacia los elementos */
+    width: 100%;
+
+}
+
+#imagenPrincipal img {
+    width: 50%;
+    /* Ajusta el tamaño de la imagen */
+    height: auto;
+    box-sizing: border-box;
+    object-fit: contain;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    border: 3px solid white
+}
+
+#imagenPrincipal p {
+    width: 50%;
+    position: static;
+    box-sizing: border-box;
+    flex-grow: 1;
+    /* Hace que el texto ocupe el espacio disponible */
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*La tercera parte esta en la otra hoja de estilos*/
+
+/*Cuarta parte*/
+#panelDividido {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#asideContent {
+    float: left;
+    width: 48%;
+    background-color: rgb(67, 84, 118);
+    border: 1px solid white;
+    border-radius: 10px;
+
+    padding: 10px;
+    font-weight: bolder;
+    font-style: italic;
+    color: beige;
+    margin-right: 2%;
+}
+
+#mainContent {
+    float: right;
+    width: 48%;
+}
+
+.section {
+    color: white;
+
+}
+
+.section a {
+    color: rgb(218, 204, 175);
+}
+
+
+/*Quinta parte*/
+
+
+
+#div  {
+    position: relative;
+    top: 10px;
+    max-width: 100%;
+    height: 170px;
+
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: -60px;
+}
+
+
+#ContenidoImagenes {
+    clear: both;
+    width: 98%;
+    background-color: rgb(51, 49, 47);
+    margin-bottom: 5px;
+    padding-top: 30px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boxImagenes {
+    flex: 1;
+    /* Hace que todos los divs ocupen espacio equitativamente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 20px 0px;
+    /* Activa el posicionamiento absoluto dentro de cada imagen */
+    padding: 10px;
+    background-color: rgb(51, 49, 47)
+}
+
+.boxImagenes a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    /* Elimina el subrayado del enlace */
+}
+
+.boxImagenes img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    /* Recorta la imagen para que llene el espacio dejando el contenedor completamente lleno con la imagen, ayuda a que la imagen no se estire o se desforme */
+    border-radius: 10px;
+    /*Redondea los bordes del elemento*/
+    background-color: rgb(218, 204, 175);
+}
+
+.boxImagenes a img:hover {
+    transition: transform 0.3s ease-in-out;
+    /*ease-in → La animación comienza lenta y se acelera al final.
+    ease-out → La animación comienza rápida y se desacelera al final.
+    ease-in-out → La animación comienza lenta, se acelera en el medio, y desacelera al final.*/
+
+    transform: scale(1.1); 
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    /* Centra el texto verticalmente */
+    left: 50%;
+    /* Centra el texto horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta la posición del texto */
+    color: white;
+    /* Color del texto */
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Efecto sombra en el texto */
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semi-transparente */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+
+
+/*Sexta parte*/
+#footer {
+    /*Propiedades para acomodo y estetica*/
+    border-top: dashed;
+    clear: both;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Letra*/
+    background-color: rgb(67, 84, 118);
+    color: white;
+    text-align: center;
+
+    /*Espaciados*/
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+#contenedorFooter {
+    display: flex;
+    justify-content: space-between;
+    /* Espaciado entre los divs */
+    align-items: center;
+    width: 80%;
+    /* Ajusta el ancho para controlar la separación */
+}
+
+#credit {
+    text-align: left;
+    /* Ajusta según el diseño deseado */
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+#date {
+    text-align: right;
+    font-size: 14px;
+    margin-right: 30px;
+}

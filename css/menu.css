@@ -1,0 +1,23 @@
+#menu {
+    display: flex;
+    height: auto;
+    margin-bottom: 10px;
+    background-color: rgb(218, 204, 175);
+}
+
+#menu #container .principal {
+    float: left;
+    color: white;
+    border-right: 1px solid white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 25px;
+}
+
+#menu #container a:hover {
+    color: rgb(67, 84, 118);
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(51, 49, 47);
+}
+
