@@ -109,7 +109,6 @@ h4.Animacion {
     background-color: rgb(67, 84, 118);
     border: 1px solid white;
     border-radius: 10px;
-
     padding: 10px;
     font-weight: bolder;
     font-style: italic;
@@ -120,6 +119,7 @@ h4.Animacion {
 #mainContent {
     float: right;
     width: 48%;
+    margin-left: 5px ;
 }
 
 .section {
@@ -161,6 +161,13 @@ h4.Animacion {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #ContenidoImagenes {
+        flex-direction: column;
+        align-items: center; /* Para centrar las imágenes en la columna */
+    }
 }
 
 .boxImagenes {
@@ -222,6 +229,12 @@ h4.Animacion {
     /* Fondo semi-transparente */
     padding: 5px;
     border-radius: 5px;
+}
+
+.custom-bg {
+    padding: 20px; /* Añade espacio alrededor para que se vea mejor */
+    border-radius: 10px; /* Bordes redondeados opcionalmente */
+    color: white;
 }
 
 

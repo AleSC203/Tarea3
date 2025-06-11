@@ -5,7 +5,7 @@
     background-color: rgb(218, 204, 175);
 }
 
-#menu #container .principal {
+#menu #Contenedor .principal {
     float: left;
     color: white;
     border-right: 1px solid white;
@@ -14,10 +14,19 @@
     padding: 10px 25px;
 }
 
-#menu #container a:hover {
+#menu #Contenedor a:hover {
     color: rgb(67, 84, 118);
     font-size: larger;
     font-weight: bold;
     background-color: rgb(51, 49, 47);
+}
+
+@media (max-width: 767px) {
+    #menu #Contenedor a:hover {
+        color: inherit !important;
+        font-size: inherit !important;
+        font-weight: normal !important;
+        background-color: transparent !important;
+    }
 }
 
